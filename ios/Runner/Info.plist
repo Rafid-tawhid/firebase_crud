@@ -7,8 +7,6 @@
 	<key>CFBundleDisplayName</key>
 	<string>Firebase Crud</string>
 	<key>CFBundleExecutable</key>
-	<key>FirebaseAppDelegateProxyEnabled</key>
-    <false/>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
