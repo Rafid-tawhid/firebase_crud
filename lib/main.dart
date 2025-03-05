@@ -81,10 +81,11 @@ class _MyHomePageState extends State<MyHomePage> {
     } catch (e) {
       print('Error adding data: $e');
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Failed to add data')),
+         const SnackBar(content: Text('Failed to add data')),
       );
     }
   }
+  //
 
   @override
   Widget build(BuildContext context) {
