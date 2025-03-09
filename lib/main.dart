@@ -1,15 +1,13 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  try {
-    await Firebase.initializeApp();
-    print('🔥 Firebase connected successfully!');
-  } catch (e) {
-    print('❌ Firebase connection failed: $e');
-  }
+  // try {
+  //   await Firebase.initializeApp();
+  //   print('🔥 Firebase connected successfully!');
+  // } catch (e) {
+  //   print('❌ Firebase connection failed: $e');
+  // }
   runApp(const MyApp());
 }
 
@@ -66,26 +64,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
-  Future<void> _addData() async {
-    try {
-      await _firestore.collection('users').add({
-        'name': 'Tawhidur Rahman Rafid',
-        'age': 28,
-        'created_at': FieldValue.serverTimestamp(),
-      });
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Data added successfully!')),
-      );
-    } catch (e) {
-      print('Error adding data: $e');
-      ScaffoldMessenger.of(context).showSnackBar(
-         const SnackBar(content: Text('Failed to add data')),
-      );
-    }
-  }
-
 
   @override
   Widget build(BuildContext context) {
@@ -132,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _addData,
+        onPressed: (){},
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
