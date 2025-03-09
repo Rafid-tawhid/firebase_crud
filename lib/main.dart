@@ -8,6 +8,7 @@ Future<void> main() async {
   // } catch (e) {
   //   print('❌ Firebase connection failed: $e');
   // }
+  //
   runApp(const MyApp());
 }
 
