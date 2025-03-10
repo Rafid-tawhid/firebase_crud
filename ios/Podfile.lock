@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 PODS:
   - Firebase/CoreOnly (11.8.0):
     - FirebaseCore (~> 11.8.0)
@@ -46,5 +47,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
 
 PODFILE CHECKSUM: a57f30d18f102dd3ce366b1d62a55ecbef2158e5
+=======
+PODFILE CHECKSUM: 047477483a74f2fad11b5036508b0e75fab05b41
+>>>>>>> master
 
 COCOAPODS: 1.16.2

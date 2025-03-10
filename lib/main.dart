@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 void main() async{
@@ -9,6 +10,21 @@ void main() async{
   runApp(const MyApp());
 }
 //
+=======
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // try {
+  //   await Firebase.initializeApp();
+  //   print('🔥 Firebase connected successfully!');
+  // } catch (e) {
+  //   print('❌ Firebase connection failed: $e');
+  // }
+  //
+  runApp(const MyApp());
+}
+
+>>>>>>> master
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -61,6 +77,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+<<<<<<< HEAD
   int _counter = 0;
 
   void _incrementCounter() {
@@ -73,6 +90,9 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter++;
     });
   }
+=======
+
+>>>>>>> master
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+<<<<<<< HEAD
       body: Center(
+=======
+      body: const Center(
+>>>>>>> master
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -111,6 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+<<<<<<< HEAD
             const Text(
               'You have pushed the button this many times:',
             ),
@@ -118,11 +143,21 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+=======
+            Text(
+              'You have pushed the button this many times:',
+            ),
+
+>>>>>>> master
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
+<<<<<<< HEAD
         onPressed: _incrementCounter,
+=======
+        onPressed: (){},
+>>>>>>> master
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
